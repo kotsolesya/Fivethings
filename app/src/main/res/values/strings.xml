@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Five things</string>
+    <string name="checkbox_last_activity">Was this app \"Five things\" helpful ? </string>
 </resources>
