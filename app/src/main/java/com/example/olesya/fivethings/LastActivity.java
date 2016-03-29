@@ -1,9 +1,10 @@
 package com.example.olesya.fivethings;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class LastActivity extends AppCompatActivity {
+public class LastActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

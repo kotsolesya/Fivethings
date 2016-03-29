@@ -64,7 +64,7 @@
         android:text="Senior developer" />
 
     <CheckBox
-        android:id="@+id/checkBox_for_name"
+        android:id="@+id/checkBox_was_helpful"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
