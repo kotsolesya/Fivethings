@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingTop="24dp"
+        android:textSize="24sp"
         android:text="resume"
         android:textAllCaps="true"
         android:textStyle="bold" />
@@ -23,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:textSize="24sp"
         android:paddingTop="24dp"
         android:text="What's your name?" />
 
@@ -39,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:textSize="24sp"
         android:paddingTop="24dp"
         android:text="Who are you? " />
 
@@ -47,21 +50,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Junior Developer" />
+        android:text="@string/junior_dev" />
 
     <RadioButton
         android:id="@+id/radio_btn_middle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Middle Developer" />
+        android:text="@string/middle_dev" />
 
     <RadioButton
         android:id="@+id/radio_btn_senior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Senior developer" />
+        android:text="@string/senior_dev" />
 
     <CheckBox
         android:id="@+id/checkBox_was_helpful"

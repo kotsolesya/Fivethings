@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Five things</string>
     <string name="checkbox_last_activity">Was this app \"Five things\" helpful ? </string>
+    <string name="junior_dev">Junior Developer</string>
+    <string name="middle_dev">Middle Developer</string>
+    <string name="senior_dev">Senior Developer</string>
 </resources>

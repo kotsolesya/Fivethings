@@ -23,7 +23,7 @@ public class SecondThingActivity extends Activity{
         onClickNext.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View view){
-                Intent intent = new Intent(SecondThingActivity.this, MainActivity.class);
+                Intent intent = new Intent(SecondThingActivity.this, LastActivity.class);
                 startActivity(intent);
             }
         });
