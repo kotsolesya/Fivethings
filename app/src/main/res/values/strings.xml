@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Five things</string>
+    <string name="first_thing">#1 IDE Integrated development environment</string>
+    <string name="second_thing">#2 Community</string>
+    <string name="three_thing">#3 Programming languages</string>
+    <string name="four_thing">#4 GitHub</string>
+    <string name="five_thing">#5 English</string>
     <string name="checkbox_last_activity">Was this app \"Five things\" helpful ? </string>
     <string name="junior_dev">Junior Developer</string>
     <string name="middle_dev">Middle Developer</string>

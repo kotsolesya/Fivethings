@@ -1,44 +1,40 @@
 package com.example.olesya.fivethings;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-/**
- * Created by Lesichka on 25.03.2016.
- */
-public class SecondThingActivity extends AppCompatActivity {
+public class ThreeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_secondthing);
+        setContentView(R.layout.activity_three_thing);
         onClickFirstThings();
-       // onClickSecondThings();
-        onClickThreeThings();
+        onClickSecondThings();
+       // onClickThreeThings();
         onClickFourThings();
         onClickFiveThings();
-        Log.i("TAG", "Create_2");
+        Log.i("TAG", "Create_3");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.i("TAG", "Stop_1");
+        Log.i("TAG", "Stop_3");
     }
-/*
-onClickFirstThings для виклику першої причини FirstThings
- */
-   private void onClickFirstThings() {
+    /*
+    onClickFirstThings для виклику першої причини FirstThings
+     */
+    private void onClickFirstThings() {
         Button onClickFirst = (Button) findViewById(R.id.btn_first_thing);
         onClickFirst.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent intent = new Intent(SecondThingActivity.this, FirstThingActivity.class);
+                Intent intent = new Intent(ThreeActivity.this, FirstThingActivity.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +48,7 @@ onClickFirstThings для виклику першої причини FirstThings
         onClickSecond.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent intent = new Intent(SecondThingActivity.this, SecondThingActivity.class);
+                Intent intent = new Intent(ThreeActivity.this, SecondThingActivity.class);
                 startActivity(intent);
             }
         });
@@ -67,7 +63,7 @@ onClickFirstThings для виклику першої причини FirstThings
         onClickThree.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent intent = new Intent(SecondThingActivity.this, ThreeActivity.class);
+                Intent intent = new Intent(ThreeActivity.this, ThreeActivity.class);
                 startActivity(intent);
             }
         });
@@ -81,7 +77,7 @@ onClickFirstThings для виклику першої причини FirstThings
         onClickFour.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent intent = new Intent(SecondThingActivity.this, FourActivity.class);
+                Intent intent = new Intent(ThreeActivity.this, FourActivity.class);
                 startActivity(intent);
             }
         });
@@ -95,7 +91,7 @@ onClickFirstThings для виклику першої причини FirstThings
         onClickFive.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent intent = new Intent(SecondThingActivity.this, FiveActivity.class);
+                Intent intent = new Intent(ThreeActivity.this, FiveActivity.class);
                 startActivity(intent);
             }
         });

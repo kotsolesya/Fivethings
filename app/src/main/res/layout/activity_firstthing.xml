@@ -1,103 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/zenstones">
+    android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/img_ide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/ide" />
 
     <TextView
         android:id="@+id/title_thing"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:paddingBottom="44dp"
         android:paddingTop="44dp"
-        android:text="Five things every new programmer should know"
-        android:textSize="24sp" />
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/title_thing">
+        android:text="@string/first_thing"
+        android:textSize="24sp"
+        android:layout_below="@+id/img_ide"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-
-            <View style="@style/Divider"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-
-        </LinearLayout>
-
-    </ScrollView>
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_thing"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:text="jhd djhf kjhd jhd kjhf fh know" />
+
+        <View style="@style/Divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:text="jhd djhf kjhd jhd kjhf fh know" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liner_layout_five_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
 
         <Button
-            android:id="@+id/btn_prev"
-            android:text="prev"
-            style="@style/ButtonNextPrev"/>
+            android:id="@+id/btn_first_thing"
+            style="@style/ButtonNextPrev"
+            android:text="#1" />
 
         <Button
-            android:id="@+id/btn_next"
-            android:text="next"
-            style="@style/ButtonNextPrev"/>
+            android:id="@+id/btn_second_thing"
+            style="@style/ButtonNextPrev"
+            android:text="#2" />
+
+        <Button
+            android:id="@+id/btn_three_thing"
+            style="@style/ButtonNextPrev"
+            android:text="#3" />
+
+        <Button
+            android:id="@+id/btn_four_thing"
+            style="@style/ButtonNextPrev"
+            android:text="#4" />
+
+        <Button
+            android:id="@+id/btn_five_thing"
+            style="@style/ButtonNextPrev"
+            android:text="#5" />
     </LinearLayout>
 
 

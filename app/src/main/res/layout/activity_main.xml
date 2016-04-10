@@ -24,51 +24,15 @@
         android:text="Five things every new programmer should know"
         android:textSize="24sp" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-
         <Button
             android:id="@+id/btn_first_thing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3" />
 
 
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-
-        <Button
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="6" />
-    </LinearLayout>
 
 
 </LinearLayout>

@@ -15,9 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FirstThingActivity"></activity>
-        <activity android:name=".SecondThingActivity"></activity>
-        <activity android:name=".LastActivity"></activity>
+        <activity android:name=".FirstThingActivity" />
+        <activity android:name=".SecondThingActivity" />
+        <activity android:name=".LastActivity" />
+        <activity android:name=".ResumeActivity" />
+        <activity android:name=".ThreeActivity" />
+        <activity android:name=".FourActivity" />
+        <activity android:name=".FiveActivity"></activity>
     </application>
 
 </manifest>
