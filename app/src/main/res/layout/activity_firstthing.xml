@@ -52,27 +52,27 @@
 
         <Button
             android:id="@+id/btn_first_thing"
-            style="@style/ButtonNextPrev"
+            style="@style/ButtonThing"
             android:text="#1" />
 
         <Button
             android:id="@+id/btn_second_thing"
-            style="@style/ButtonNextPrev"
+            style="@style/ButtonThing"
             android:text="#2" />
 
         <Button
             android:id="@+id/btn_three_thing"
-            style="@style/ButtonNextPrev"
+            style="@style/ButtonThing"
             android:text="#3" />
 
         <Button
             android:id="@+id/btn_four_thing"
-            style="@style/ButtonNextPrev"
+            style="@style/ButtonThing"
             android:text="#4" />
 
         <Button
             android:id="@+id/btn_five_thing"
-            style="@style/ButtonNextPrev"
+            style="@style/ButtonThing"
             android:text="#5" />
     </LinearLayout>
 

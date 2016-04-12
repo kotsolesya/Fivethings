@@ -5,8 +5,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewConfiguration;
 import android.widget.Button;
+import android.widget.Toast;
+
+import java.lang.reflect.Field;
 
 public class FirstThingActivity extends AppCompatActivity {
     @Override
@@ -18,28 +25,69 @@ public class FirstThingActivity extends AppCompatActivity {
         onClickThreeThings();
         onClickFourThings();
         onClickFiveThings();
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+       // actionBar.setDisplayHomeAsUpEnabled(true);
+
+        //  actionBar.setHomeAsUpIndicator(R.drawable.cat);
+       // getOverflowMenu();
+
         Log.i("TAG", "Create_1");
 
 
     }
 
+    /*
+    перевіряю чи стопається
+     */
     @Override
     protected void onStop() {
         super.onStop();
         Log.i("TAG", "Stop_1");
     }
-/*
-onClickFirstThings для виклику першої причини FirstThings тут вона виключина, нічого не робе
- */
-  /*  private void onClickFirstThings() {
-        Button onClickFirst = (Button) findViewById(R.id.btn_first_thing);
-        onClickFirst.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View view) {
-                Intent intent = new Intent(FirstThingActivity.this, FirstThingActivity.class);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.bar_actions, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    /*
+    для кнопки додому, на головну активність
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_home:
+                // onBackPressed();
+            {
+                Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
+                return true;
             }
-        });
+            case R.id.action_info:
+                Toast.makeText(this, "Help Clicked", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+
+  /*  private void getOverflowMenu() {
+
+        try {
+            ViewConfiguration config = ViewConfiguration.get(this);
+            Field menuKeyField = ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey");
+            if(menuKeyField != null) {
+                menuKeyField.setAccessible(true);
+                menuKeyField.setBoolean(config, false);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }*/
 
     /*

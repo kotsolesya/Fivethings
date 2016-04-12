@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Five things</string>
+    <string name="title">Five things every new programmer should know</string>
     <string name="first_thing">#1 IDE Integrated development environment</string>
-    <string name="second_thing">#2 Community</string>
+    <string name="second_thing">#2 Community and search</string>
     <string name="three_thing">#3 Programming languages</string>
     <string name="four_thing">#4 GitHub</string>
     <string name="five_thing">#5 English</string>

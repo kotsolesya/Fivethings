@@ -18,14 +18,14 @@ public class FiveActivity extends AppCompatActivity {
         onClickThreeThings();
         onClickFourThings();
         onClickFiveThings();
-        Log.i("TAG", "Create_4");
+        Log.i("TAG", "Create_5");
     }
 
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.i("TAG", "Stop_4");
+        Log.i("TAG", "Stop_5");
     }
     /*
     onClickFirstThings для виклику першої причини FirstThings

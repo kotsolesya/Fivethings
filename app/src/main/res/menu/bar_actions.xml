@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- Home -->
+    <item android:id="@+id/action_home"
+        android:icon="@drawable/ic_action_home"
+        android:title="on home activity"
+        android:showAsAction="always"/>
+    <!-- Help -->
+    <item android:id="@+id/action_info"
+        android:icon="@drawable/ic_action_info"
+        android:title="resume"
+        android:showAsAction="always"/>
+</menu>

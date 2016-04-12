@@ -20,7 +20,7 @@ public class LastActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        Log.i("TAG", "Stop");
+        Log.i("TAG", "Stop_Last");
     }
 
     private void checkRadioGroup(RadioGroup radioGroup) {
