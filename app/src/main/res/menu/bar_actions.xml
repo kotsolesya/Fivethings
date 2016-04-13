@@ -3,13 +3,13 @@
 
 
     <!-- Home -->
-    <item android:id="@+id/action_home"
+<!--    <item android:id="@+id/action_home"
         android:icon="@drawable/ic_action_home"
         android:title="on home activity"
-        android:showAsAction="always"/>
-    <!-- Help -->
-    <item android:id="@+id/action_info"
-        android:icon="@drawable/ic_action_info"
-        android:title="resume"
-        android:showAsAction="always"/>
+        android:showAsAction="ifRoom|withText"/>-->
+    <!-- feedback -->
+    <item android:id="@+id/action_feedback"
+        android:icon="@drawable/ic_feedback"
+        android:title="feedback"
+        android:showAsAction="ifRoom|withText"/>
 </menu>

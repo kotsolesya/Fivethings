@@ -22,15 +22,14 @@
 
     <Button
         android:id="@+id/btn_first_thing"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="54dp"
-
+        android:layout_centerInParent="true"
         android:background="@color/colorPrimary"
         android:text="go"
-        android:textColor="@color/icons" />
+        android:textColor="@color/icons"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

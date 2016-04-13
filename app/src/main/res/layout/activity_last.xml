@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingTop="24dp"
-        android:text="resume"
+        android:text="Feedback"
         android:textAllCaps="true"
         android:textSize="24sp"
         android:textStyle="bold" />

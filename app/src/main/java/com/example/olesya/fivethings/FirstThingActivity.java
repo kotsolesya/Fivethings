@@ -26,16 +26,12 @@ public class FirstThingActivity extends AppCompatActivity {
         onClickFourThings();
         onClickFiveThings();
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-       // actionBar.setDisplayHomeAsUpEnabled(true);
-
-        //  actionBar.setHomeAsUpIndicator(R.drawable.cat);
-       // getOverflowMenu();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.ic_action_home);
+        getOverflowMenu();
 
         Log.i("TAG", "Create_1");
-
-
     }
-
     /*
     перевіряю чи стопається
      */
@@ -46,8 +42,7 @@ public class FirstThingActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
+    public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.bar_actions, menu);
 
@@ -56,27 +51,29 @@ public class FirstThingActivity extends AppCompatActivity {
 
     /*
     для кнопки додому, на головну активність
+    @param  android.R.id.home іконка домик лоя повернення на головну
+    @param R.id.action_feedback для показу LastActivity з підсумком
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_home:
-                // onBackPressed();
-            {
+            case android.R.id.home: {
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 return true;
             }
-            case R.id.action_info:
-                Toast.makeText(this, "Help Clicked", Toast.LENGTH_SHORT).show();
+            case R.id.action_feedback: {
+                Intent intent = new Intent(this, LastActivity.class);
+                startActivity(intent);
                 return true;
+            }
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
 
-  /*  private void getOverflowMenu() {
+  private void getOverflowMenu() {
 
         try {
             ViewConfiguration config = ViewConfiguration.get(this);
@@ -88,7 +85,7 @@ public class FirstThingActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }*/
+    }
 
     /*
     onClickSecondThings для виклику другої причини SecondThings
