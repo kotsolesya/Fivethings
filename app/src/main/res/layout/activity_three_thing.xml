@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-     android:background="@drawable/zenstones"
+     android:background="@drawable/fon"
     tools:context="com.example.olesya.fivethings.ThreeActivity">
 
 
@@ -12,13 +12,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingTop="44dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
             android:text="@string/three_thing"
             android:textSize="24sp" />
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/title_thing">
+    <ImageView
+        android:id="@+id/img_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_thing"
+        android:paddingBottom="12dp"
+        android:src="@drawable/progleng" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/liner_layout_five_button"
+        android:layout_below="@+id/img_3"
+        android:background="#aaffffff">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -26,62 +37,25 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="jhd djhf kjhd jhd kjhf fh know"
-                    android:paddingBottom="12dp"/>
+                    style="@style/TextDescription"
+                    android:text="Яку мову, технологію, напрямок обрати?" />
 
-                <View style="@style/Divider"/>
+                <View style="@style/Divider" />
+                <TextView
+                    style="@style/TextDescription"
+                    android:text="На це питання є багато відповідей в інтернеті, особливо для тих, що тільки починають програмувати." />
 
+                <View style="@style/Divider" />
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="jhd djhf kjhd jhd kjhf fh know"
-                    android:paddingBottom="12dp"/>
-                <View style="@style/Divider"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="jhd djhf kjhd jhd kjhf fh know"
-                    android:paddingBottom="12dp"/>
-                <View style="@style/Divider"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="jhd djhf kjhd jhd kjhf fh know"
-                    android:paddingBottom="12dp"/>
-                <View style="@style/Divider"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="jhd djhf kjhd jhd kjhf fh know"
-                    android:paddingBottom="12dp"/>
-                <View style="@style/Divider"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="jhd djhf kjhd jhd kjhf fh know"
-                    android:paddingBottom="12dp"/>
-                <View style="@style/Divider"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="jhd djhf kjhd jhd kjhf fh know"
-                    android:paddingBottom="12dp"/>
-                <View style="@style/Divider"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="jhd djhf kjhd jhd kjhf fh know"
-                    android:paddingBottom="12dp"/>
-                <View style="@style/Divider"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="jhd djhf kjhd jhd kjhf fh know"
-                    android:paddingBottom="12dp"/>
-                <View style="@style/Divider"/>
+                    style="@style/TextDescription"
+                    android:text="Головне, що я зрозуміла - більшіст професійних програмістів володіють кількома мовами, спробували різноманітні платформи та напрямки у програмуванні, і регулярно поповнюють свій арсенал знань та навичок. " />
 
+                <View style="@style/Divider" />
+                <TextView
+                    style="@style/TextDescription"
+                    android:text="Тому не варто зациклюватися на чомусь одному, а пробувати різні напрямки і мови в програмуванні" />
+
+                <View style="@style/Divider" />
             </LinearLayout>
 
         </ScrollView>

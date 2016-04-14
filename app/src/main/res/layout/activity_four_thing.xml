@@ -12,13 +12,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingTop="44dp"
+        android:paddingTop="24dp"
         android:text="@string/four_thing"
         android:textSize="24sp" />
+    <ImageView
+        android:id="@+id/img_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_thing"
+        android:paddingBottom="12dp"
+        android:src="@drawable/github" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title_thing">
+        android:layout_above="@+id/liner_layout_five_button"
+        android:layout_below="@+id/img_4"
+        android:background="#aaffffff">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,61 +36,20 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
+                style="@style/TextDescription"
+                android:text="Спочатку, почувши про GitHub, для мене він був як заміна флешки)))) " />
 
-            <View style="@style/Divider"/>
+            <View style="@style/Divider" />
+            <TextView
+                style="@style/TextDescription"
+                android:text="Головне завдання GitHub - зробити процес розробки простим і пристосувати його до одночасної роботи над ним декількох людей. Також це чудовий прилад для навчання. " />
 
+            <View style="@style/Divider" />
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
+                style="@style/TextDescription"
+                android:text="Спробувавши його, зрозуміла що дуже багато корисних речей можна з ним робити. Тому краще пройти хоч якісь уроки, наприклад githowto.com, і не боятися його" />
+
+            <View style="@style/Divider" />
 
         </LinearLayout>
 

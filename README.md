@@ -2,8 +2,12 @@
 Is a simple app for Android  about 
 Five things every new programmer should know
 
+--
 Додаток для Android про п'ять речей, які краще знати початкуючим програмістам.
 Особисто ними користуюся.
+Ідея з’явилася не відразу, і взагалі було витрачено багато часу для пошуку самої теми додатку. Вигляд і приблизний функціонал вималювався відразу – створити кілька Layouts із кнопками, щоб можна було їх переключити, і потрапити на будь-який Layout. Також іконка Home в Action bar, для повернення на головний слой та  функціональний Feedback, що викликається з меню(верхній правий кут).
+Сама ідея:  описані п’ять речей, які є одночасно нагадуванням для мене, чим потрібно користуватися і що потрібно ще вчити. 
+--
 
 **Getting Started**
 
@@ -36,3 +40,4 @@ This sample uses the Gradle build system. To build this project, use the "gradle
 **Author**
 
 Olesya Kots for StudyJam CK 2016
+contact email: kots.olesya@gmail.com

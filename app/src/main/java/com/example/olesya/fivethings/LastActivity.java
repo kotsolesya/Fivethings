@@ -109,7 +109,7 @@ public class LastActivity extends AppCompatActivity {
 
                     AlertDialog.Builder builder = new AlertDialog.Builder(LastActivity.this);
                     builder.setTitle("Thank you ," + nameUser + ", for your time!")
-                            .setMessage("You are " + statusFromRadioGroup + "."+ checkCheckboxWasHelpful() )
+                            .setMessage("You are " + statusFromRadioGroup + ".\n"+ checkCheckboxWasHelpful() )
                             .setCancelable(false)
                             .setNegativeButton("ОК",
                                     new DialogInterface.OnClickListener() {
