@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/zenstones"
+    android:background="@drawable/fon"
     tools:context="com.example.olesya.fivethings.FiveActivity">
 
 
@@ -12,13 +12,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingTop="44dp"
+        android:paddingTop="24dp"
         android:text="@string/five_thing"
         android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/img_do_speak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_thing"
+        android:src="@drawable/do_you_speak_english" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title_thing">
+        android:layout_above="@+id/liner_layout_five_button"
+        android:layout_below="@+id/img_do_speak"
+        android:background="#FFFFFF">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,61 +36,41 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
+                style="@style/TextDescription"
+                android:text="Чому ж у сфері IT така важлива англійська ?" />
 
-            <View style="@style/Divider"/>
+            <View style="@style/Divider" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
+                style="@style/TextDescription"
+                android:text="Так склалося , що більшість програм , а також всі мови програмування були розроблені англомовними фахівцями , що пізніше увійшло в тенденцію – впроваджувати розробки за допомогою саме англійської мови. Англійською прийнято складати всю технічну документацію за програмою , створювати коментарі.
+Близько 80 % замовників на розробку ПЗ – іноземці , багато хто – носії цієї мови . Саме тому не менш важливим аспектом у роботі програміста є вміння вести переговори з іноземним замовником , тобто знання розмовної (в даному випадку , ділової ) англійської . " />
+            <View style="@style/Divider" />
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
+                style="@style/TextDescription"
+                android:text="Англійська використовується для вивчення програмування" />
+
+            <View style="@style/Divider" />
+
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
+                style="@style/TextDescription"
+                android:text="Мова програмування також використовує англійські слова в якості операторів та ключових слів" />
+
+            <View style="@style/Divider" />
+
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
+                style="@style/TextDescription"
+                android:text="Ну і  літератури англійською завжди більше. Особливо спеціалізованої." />
+
+            <View style="@style/Divider" />
+
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jhd djhf kjhd jhd kjhf fh know"
-                android:paddingBottom="12dp"/>
-            <View style="@style/Divider"/>
+                style="@style/TextDescription"
+                android:text="Маєш вільний час і вже програмуєш? Тоді супер. Приділи трохи цього часу англійській. Вона однозначно стане дуже хорошим плюсом у твоєму резюме! Коли розглядатимуть тебе і ще одну людину з однаковими даними щодо програмування – переможе той, хто знає англійську краще." />
+
+
+
+            <View style="@style/Divider" />
 
         </LinearLayout>
 
@@ -117,9 +107,6 @@
             style="@style/ButtonThing"
             android:text="#5" />
     </LinearLayout>
-
-
-
 
 
 </RelativeLayout>

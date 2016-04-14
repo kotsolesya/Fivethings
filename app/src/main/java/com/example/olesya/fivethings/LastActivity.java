@@ -1,36 +1,45 @@
 package com.example.olesya.fivethings;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.ViewConfiguration;
+import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import java.lang.reflect.Field;
 
 public class LastActivity extends AppCompatActivity {
+    String statusFromRadioGroup;
+    String nameUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_last);
 
+
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.ic_action_home);
-
-
-        //setSubmitButton();
+        setSubmitButton();
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radiogroup_who_are_you);
-        checkRadioGroup(radioGroup);
+        statusFromRadioGroup = checkRadioGroup(radioGroup);
         Log.i("TAG", "Create_Last");
+
+
     }
+
     @Override
     protected void onStop() {
         super.onStop();
@@ -57,7 +66,7 @@ public class LastActivity extends AppCompatActivity {
     /*
     обробка RadioGroup
      */
-    private void checkRadioGroup(RadioGroup radioGroup) {
+    private String checkRadioGroup(RadioGroup radioGroup) {
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
@@ -83,14 +92,41 @@ public class LastActivity extends AppCompatActivity {
                 }
             }
         });
+        return "junior";
     }
 
     /*
      * setSubmitButton for button Submit, create resume
-
+       @param builder для діалогового вікна, що підсумовує відповіль для користувача після натиснення кнопки Submit
      */
-    /*private void setSubmitButton() {
+    private void setSubmitButton() {
+        Button btnFirst = (Button) findViewById(R.id.btn_submit);
+
+        // обробчик клікання кнопки
+        if (btnFirst != null) {
+            btnFirst.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.i("TAG", statusFromRadioGroup);
+                    EditText editTextName = (EditText) findViewById(R.id.editText_name);
+                    nameUser = editTextName.getText().toString();
+                    AlertDialog.Builder builder = new AlertDialog.Builder(LastActivity.this);
+                    builder.setTitle("Thank you," + nameUser + "for your feedback!")
+                            .setMessage("Покормите кота!" + statusFromRadioGroup)
+                            .setCancelable(false)
+                            .setNegativeButton("ОК",
+                                    new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int id) {
+                                            dialog.cancel();
+                                        }
+                                    });
+                    AlertDialog alert = builder.create();
+                    alert.show();
 
 
-    }*/
+                }
+            });
+        }
+
+    }
 }
