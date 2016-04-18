@@ -1,6 +1,7 @@
 # **Five Things**
 Is a simple app for Android  about 
 Five things every new programmer should know
+[Presentation](https://docs.google.com/presentation/d/1XrWibljd9WLswOdzunRz6-FN6TJ0tpby-euajv3vr2E/edit?usp=sharing)
 
 --
 Додаток для Android про п'ять речей, які краще знати початкуючим програмістам.
