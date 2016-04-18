@@ -36,10 +36,6 @@ public class LastActivity extends AppCompatActivity {
         actionBar.setHomeAsUpIndicator(R.drawable.ic_action_home);
       //  обробка RadioGroup
        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radiogroup_who_are_you);
-        /*RadioButton rbu =(RadioButton)findViewById(R.id.radio_btn_junior);
-        rbu.getId();
-        rbu.setChecked(true);
-        statusFromRadioGroup = rbu.getText().toString();*/
          checkRadioGroup(radioGroup);
 
 
@@ -87,7 +83,7 @@ public class LastActivity extends AppCompatActivity {
 
 
     /*
-     * setSubmitButton for button Submit, create resume
+     * setSubmitButton for button Submit, create feedback
        @param builder для діалогового вікна, що підсумовує відповіль для користувача після натиснення кнопки Submit
      */
     private void setSubmitButton() {

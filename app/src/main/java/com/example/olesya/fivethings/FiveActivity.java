@@ -97,6 +97,7 @@ public class FiveActivity extends AppCompatActivity {
         });
     }
 
+
     /*
     onClickSecondThings для виклику другої причини SecondThings
      */
